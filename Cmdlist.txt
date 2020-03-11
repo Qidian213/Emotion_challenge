@@ -1,0 +1,25 @@
+### data pre_process
+
+cd crop_align
+mkdir build
+cd build
+cmake ..
+make
+cd ..
+
+## 
+python landmark.py ### gen train_landmark.json, val_landmark.json, test_landmark.json
+python crop_align.py ### crop face images
+python landmark_224.py ### gen landmark_224.json
+python prepare_data.py ### gen val_ld.txt, train_ld_shuffle.txt
+
+##
+cd ..
+python train.py
+
+python pred_csv.py
+
+python gen_submit.py
+
+
+
