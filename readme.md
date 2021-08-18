@@ -1,7 +1,7 @@
 ## FG2020 Compound Emotion challenge
 In this repo, we include the 1st Place code to FG2020 Compound Emotion challenge;
 
-![](https://github.com/Qidian213/NTIRE_Relighting/blob/main/Meida/Image_Result.png)
+![](https://github.com/Qidian213/Emotion_challenge/blob/master/Net.PNG)
 
 ### Introduction
 We use [Dlib](https://github.com/davisking/dlib) to do face and landmark detection, and use landmark to do face cropping and alignment, then we use [Pytorch version 1.1](https://github.com/pytorch/pytorch) to with landmark and cropping image to train cnn model to do the face expression recognition task.
